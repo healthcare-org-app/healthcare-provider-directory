@@ -1,0 +1,12 @@
+name: provider-directory
+port: 8206
+lang: python
+description: "provider-directory \u2014 domain: providers"
+http_deps:
+- providers-service
+- specialties-service
+- credentialing-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []
